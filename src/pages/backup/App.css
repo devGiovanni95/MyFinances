@@ -1,0 +1,30 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-btn {
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+  height: 40px;
+}
+
+.content {
+  flex: 1; /* O conteúdo ocupa o restante da tela */
+  padding: 5px;
+}
+
+.first{
+  background-color: blue;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+}
+
+.info{
+  background-color: green;
+  width: 100vw;
+}

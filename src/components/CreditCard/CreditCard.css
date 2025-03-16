@@ -1,0 +1,25 @@
+/* src/components/CreditCardDropdown/CreditCardDropdown.css
+
+.credit-card-dropdown {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.account-info {
+  margin-top: 10px;
+} */
+/* src/components/CreditCard/CreditCard.css */
+
+.credit-card {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
