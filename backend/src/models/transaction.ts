@@ -18,6 +18,9 @@ export default class Transaction extends BaseEntity {
     @Column()
     monthly!: boolean;
 
+    @Column({default: false})
+    paid?: boolean;
+
     @Column({ nullable: true })
     description?: string;
 

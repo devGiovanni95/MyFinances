@@ -413,4 +413,37 @@ static async findTransactionsByCardAndMonth(req: Request, res: Response) {
   }
 }
 
+static async updateStatus(req: Request, res: Response) {
+  const { id } = req.params;
+  const { name, amount, date, monthly, description, cardId } = req.body;
+
+  if (!id || isNaN(Number(id))) {
+    return res.status(400).json({ error: 'O id é obrigatório' });
+  }
+
+  try {
+     const card = await Card.findOneBy({ id: Number(id) });
+          if (!card) {
+            return res.status(404).json({ error: 'Cartão não encontrado' });
+          }
+
+    const transaction = await Transaction.findOneBy({ id: Number(id) });
+    if (!transaction) {
+      return res.status(404).json({ error: 'Transação não encontrada' });
+    }
+
+    transaction.name = name;
+    transaction.amount = amount;
+    transaction.date = new Date(date);
+    transaction.monthly = monthly;
+    transaction.description = description;
+    transaction.card = card;
+
+    await transaction.save();
+    return res.json(transaction);
+  } catch (error:any) {
+    return res.status(500).json({ error: 'Erro ao atualizar transação', details: error.message });
+  }
+}
+
 }

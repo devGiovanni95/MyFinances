@@ -31,3 +31,40 @@ h1, h2, h3, h4, h5, p, table {
   background-color: green;
   width: 100vw;
 }
+
+.meu-botao {
+  background-color: #302ec5; /* Cor de fundo */
+  border: none; /* Remove a borda padrão */
+  color: white; /* Cor do texto */
+  padding: 15px 32px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Exibe como bloco inline */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margens */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.meu-botao:hover {
+  background-color: #cf764c; /* Cor de fundo ao passar o mouse */
+}
+
+
+.meu-botaoadd {
+  background-color: #0b3b05; /* Cor de fundo */
+  border: none; /* Remove a borda padrão */
+  color: white; /* Cor do texto */
+  padding: 15px 32px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Exibe como bloco inline */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margens */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.meu-botaoadd:hover {
+  background-color: #07d45d; /* Cor de fundo ao passar o mouse */
+}
