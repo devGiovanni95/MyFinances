@@ -11,10 +11,10 @@ td, th {
   }
  
   th{
-    background-color: rgb(62, 113, 14);
+    background-color: #aeb4a9
   }
 
   /* colocar cores intercaladas */
   tr:nth-child(even) {
-    background-color: #a59f9f;
+    background-color: #f8f8f8;
   }

@@ -12,7 +12,7 @@ td, th {
   }
  
   .red{
-    background-color: rgb(226, 97, 71);
+    background-color:"#aeb4a9";
   }
   /* colocar cores intercaladas */
   tr:nth-child(even) {
